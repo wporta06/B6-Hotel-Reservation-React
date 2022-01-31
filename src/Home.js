@@ -13,10 +13,10 @@ const Home = () => {
 
 
       { roomsnotreserved && 
-        <div className="blog-list">
+        <div className="page-list">
         
         {roomsnotreserved.map(room => (
-            <div className="blog-preview border" key={room._id} >
+            <div className="page-preview border" key={room._id} >
               <h2 >Room Number: { room.number }</h2>
               <h3 >Price: { room.price } £</h3>
               <div className="links"><Link to={`reservation/${room._id}`} style={{ 

@@ -25,7 +25,7 @@ console.log(reservation);
   }
 
   return (
-    <div className="blog-details">
+    <div className="page-details">
       { isPending && <div>Loading...</div> }
       { error && <div>{ error }</div> }
       { reservation && (

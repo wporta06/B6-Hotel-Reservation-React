@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const ReservationList = ({ allReservation }) => {
   return (
-    <div className="blog-list">
+    <div className="page-list">
       {allReservation.map(reservation => (
-        <div className="blog-preview border" key={reservation._id} >
+        <div className="page-preview border" key={reservation._id} >
           <Link to={`reservation/${reservation._id}`}>
             <h2 className='borderin'>Reservation ID: { reservation._id }</h2>
             <h2>Reserved By: { reservation.customer }</h2>
